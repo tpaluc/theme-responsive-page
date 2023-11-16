@@ -1,0 +1,22 @@
+.box {
+    $element-margin-bottom: 60px;
+    $img-margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    &__element {
+        margin-bottom: $element-margin-bottom;
+    }
+    &__img {
+        padding: $padding;
+        max-width: 100vw;
+        height: auto;
+        margin-bottom: $img-margin-bottom;
+        
+    }
+    &__text {
+        color: $txt-color-light;
+        text-align: center;
+    }
+}

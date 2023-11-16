@@ -1,0 +1,17 @@
+.heading {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: $txt-color-light;
+    padding: $header-padding;
+    &__primary {
+        font-size: $header-primary-fz;
+        line-height: $header-primary-lh;
+    }
+    &__minory {
+        font-size: $header-minory-fz;
+        line-height: $header-minory-lh;
+        text-align: center;
+    }
+}

@@ -1,0 +1,33 @@
+.navbar {
+    $navbar-padding-right: 30px;
+    $navbar-padding-left: 30px;
+    $navbar-height: 60px;
+    background-color: $bg-dark;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    height: $navbar-height;
+    padding-left: $navbar-padding-left;
+    padding-right: $navbar-padding-right;
+    font-weight: $fw-standard;
+    &__logo {
+        position: absolute;
+        left: 0;
+        padding-left: $navbar-padding-left;
+    }
+    &__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &__element {
+        padding-right: $navbar-padding-right;
+
+    }
+    &__link {
+        text-decoration: none;
+        color: $txt-color-light;
+    }
+
+}
