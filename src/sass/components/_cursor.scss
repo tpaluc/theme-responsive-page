@@ -1,0 +1,29 @@
+.cursor {
+    $cursor-width: 3rem;
+    $cursor-height: 3rem;
+    $cursor-border: 2px solid #fff;
+    $cursor-border-radius: 50%;
+    $cursor-transform: translate(-50%, -50%);
+    $cursor-transition: all .3s ease;
+    $cursor-opacity: .5;
+    $cursor-z-index: 1;
+
+    width: $cursor-width;
+    height: $cursor-height;
+    border: $cursor-border;
+    border-radius: $cursor-border-radius;
+    position: absolute;
+    transform: $cursor-transform;
+    pointer-events: none;
+    transition: $cursor-transition;
+    transition-property: background, transform;
+    opacity: $cursor-opacity;
+    transform-origin: 100% 100%;
+    z-index: $cursor-z-index;
+    backdrop-filter: grayscale;
+}
+
+.link-grow {
+    transform: scale(2);
+    background-color: black;
+}

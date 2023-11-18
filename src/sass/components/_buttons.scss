@@ -5,4 +5,8 @@
     border: none;
     padding: $btn-padding;
     font-weight: $fw-bold;
+    &--dark {
+        background-color: $bg-dark;
+        color: $txt-color-light;
+    }
 }

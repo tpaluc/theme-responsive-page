@@ -17,9 +17,11 @@
         padding-left: $navbar-padding-left;
     }
     &__list {
-        display: flex;
-        flex-direction: row;
         justify-content: space-between;
+        display: none;
+        @media (min-width: $breakpoint-md) {
+            display: flex;
+        }
     }
     &__element {
         padding-right: $navbar-padding-right;
@@ -29,5 +31,16 @@
         text-decoration: none;
         color: $txt-color-light;
     }
-
+    &__btn {
+        margin-right: $navbar-padding-right;
+    }
 }
+
+
+.burger {
+    color: $txt-color-light;
+    font-size: $fz-20;
+    @media (min-width: $breakpoint-md) {
+        display: none;
+    }
+    }

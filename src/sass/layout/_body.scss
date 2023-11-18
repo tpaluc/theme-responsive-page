@@ -1,0 +1,6 @@
+.template {
+    $img-width: 70vw;
+    &__img {
+        max-width: $img-width;
+    }
+}

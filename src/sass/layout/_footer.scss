@@ -1,0 +1,14 @@
+.footer {
+    $footer-height: 50vh;
+   height: $footer-height;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: $fz-h1;
+   &__link {
+    color: $txt-color-dark;
+    text-align: center;
+    font-weight: $fw-standard;
+    line-height: $header-primary-lh;
+   } 
+}
