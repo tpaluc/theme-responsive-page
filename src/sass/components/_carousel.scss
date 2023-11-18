@@ -41,6 +41,7 @@
     $arrow-width: 44px;
     $arrow-height: 44px;
     $arrow-lh: 44px;
+    $arrow-left-right: 14px;
 
     top: $arrow-top;
     height: $arrow-height;
@@ -51,7 +52,7 @@
     position: absolute;
     text-align: center;
     line-height: $arrow-lh;
-    background: #fff;
+    background: $bg-gray;
     border-radius: $arrow-border-radius;
     transform: translateY(-50%);
     transition: transform 0.1s linear;
@@ -62,10 +63,10 @@
         background: $bg-white;
       }
     &:first-child{
-        left: 0px;
+        left: $arrow-left-right;
         display: none;
       }
     &:last-child{
-        right: 0px;
+        right: $arrow-left-right;
       }
   }
