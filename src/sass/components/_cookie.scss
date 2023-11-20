@@ -6,6 +6,7 @@ $popup-border-radius: 1.2rem;
 $cookie-padding-bottom: 15px;
 
 .cookie {
+    z-index: 1;
     &__container {
         position: absolute;
         top: 0;
