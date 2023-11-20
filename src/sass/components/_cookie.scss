@@ -1,0 +1,61 @@
+$btn-cookie-padding: 5px;
+$popup-position: 50%;
+$popup-width: 20rem;
+$popup-height: 10rem;
+$popup-border-radius: 1.2rem;
+$cookie-padding-bottom: 15px;
+
+.cookie {
+    z-index: 1;
+    &__container {
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(38, 38, 38, .9)
+    }
+    &__popup {
+        position: absolute;
+        left: $popup-position;
+        top: $popup-position;
+        transform: translate(-50%, -50%);
+        width: $popup-width;
+        height: $popup-height;
+        color: #fff;
+        font-family: sans-serif;
+        background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: $popup-border-radius;
+        overflow: hidden;
+        opacity: 1;
+    }
+    &__header {
+        font-weight: $fw-bold;
+        padding-bottom: $cookie-padding-bottom;
+        font-size: $fz-standard;
+    }
+    &__txt {
+        font-size: $fz-14;
+        padding-bottom: $cookie-padding-bottom;
+    }
+}
+
+
+
+.cookie {
+    $cookie-width: 50px;
+    $cookie-height: 50px;
+    $cookie-padding-left: 20px;
+    $ookie-padding-right: 40px;
+    width: $cookie-width;
+    height: $cookie-height;
+    overflow: visible;
+    padding-left: $cookie-padding-left;
+    padding-right: $ookie-padding-right
+}
+
+.btn--cookie {
+    padding: $btn-cookie-padding
+}
