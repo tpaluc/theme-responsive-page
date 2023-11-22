@@ -11,20 +11,44 @@
     padding-left: $navbar-padding-left;
     padding-right: $navbar-padding-right;
     font-weight: $fw-standard;
+    position: relative;
     &__logo {
         position: absolute;
         left: 0;
         padding-left: $navbar-padding-left;
     }
     &__list {
+        $list-padding: 20px 5px;
+        $list-height: 200px;
+        $list-width: 90vw;
+        $list-top: 100px;
+        position: absolute;
         justify-content: space-between;
+        display: none;
+        background-color: $bg-dark;
+        color: $txt-color-light;
+        flex-direction: column;
+        top: $list-top;
+        left: 0;
+        width: $list-width;
+        height: $list-height;
+        padding: $list-padding;
         display: none;
         @media (min-width: $breakpoint-md) {
             display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            position: relative;
+            width: auto;
+            top: 0;
+
         }
+       
     }
     &__element {
         padding-right: $navbar-padding-right;
+        position: relative;
 
     }
     &__link {
@@ -40,7 +64,39 @@
 .burger {
     color: $txt-color-light;
     font-size: $fz-20;
+    padding: 10px;
     @media (min-width: $breakpoint-md) {
         display: none;
     }
+}
+
+.submenu {
+    $submenu-top: 40px;
+    $submenu-widht: 100px;
+    $submenu-padding: 10px 20px 10px 0;
+    $submenu-padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: $submenu-top;
+    background-color: $bg-dark;
+    width: $submenu-top;
+    padding: $submenu-padding;
+    display: none;
+    &__element {
+        padding-bottom: $submenu-padding-bottom;
     }
+    &__link {
+        text-decoration: none;
+        color: $txt-color-light;
+
+    }
+}
+
+.navbar__list.active {
+    display: flex;
+}
+
+.submenu.active {
+    display: flex;
+}

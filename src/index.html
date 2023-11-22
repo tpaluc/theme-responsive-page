@@ -11,7 +11,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="cookie__container">
+    <!-- <div class="cookie__container">
         <div class="cookie__popup">
             <svg class="cookie" width="552" height="553" viewBox="0 0 552 553" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="cookies-svgrepo-com 1" clip-path="url(#clip0_1_46)">
@@ -78,20 +78,26 @@
             <button class="btn btn--cookie">Got it!</button>
         </div>
         </div>
-    </div>
+    </div> -->
     <div class="cursor"></div>
         <nav class="navbar">
             <img class="navbar__logo" src="./image/logo-white.83d06011cba611143de6113e2ab2aa3f.svg" alt="">
             <ul class="navbar__list">
                 <li class="navbar__element mouse-trigger">
-                    <a class="navbar__link mouse-trigger" href="">
+                    <a class="navbar__link mouse-trigger" href="#">
                         home
                     </a>
                 </li>
-                <li class="navbar__element">
-                    <a class="navbar__link" href="">
+                <li class="navbar__element js-navbar-trigger">
                         projects
-                    </a>
+                    <ul class="submenu">
+                        <li class="submenu__element"><a class="submenu__link" href="#">Project 1</a></li>
+                        <li class="submenu__element"><a class="submenu__link" href="#">Project 2</a></li>
+                        <li class="submenu__element"><a class="submenu__link" href="#">Project 3</a></li>
+                        <li class="submenu__element"><a class="submenu__link" href="#">Project 4</a></li>
+                        <li class="submenu__element"><a class="submenu__link" href="#">Project 5</a></li>
+                        <li class="submenu__element"><a class="submenu__link" href="#">Project 6</a></li>
+                    </ul>
                 </li>
                 <li class="navbar__element">
                     <a class="navbar__link" href="">
@@ -250,10 +256,11 @@
             </div>
         </section>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="./cookie.js"></script>
+        <!-- <script src="./cookie.js"></script> -->
         <script src="./mouse.js"></script>
         <script src="./carousel.js"></script>
         <script src="./scroll.js"></script>
+        <script src="./menu.js"></script>
         <footer>
             <div class="footer">
                 <a class="footer__link" href="#">
